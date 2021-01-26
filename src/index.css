@@ -17,3 +17,18 @@ p{
   align-items: center;
   margin:10px;
 }
+.info {
+  /* border :5px solid black; */
+display:flex;
+flex-direction: row;
+justify-content: center;  
+
+}
+.info button{
+  /* color:blue; */
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 20px;
+}
+

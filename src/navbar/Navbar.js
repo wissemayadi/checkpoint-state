@@ -1,6 +1,6 @@
-import React from "react";
-import {Nav,NavDropdown,Form,FormControl,Button} from "react-bootstrap";
-const Navbar =()=>{
+import React,{useState} from "react";
+import {Nav,NavDropdown,Form,FormControl,Button,Navbar} from "react-bootstrap";
+const Navbaro =()=>{
   return (
     <Navbar bg="light" expand="lg">
   <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
@@ -27,4 +27,4 @@ const Navbar =()=>{
   )
   }
 
-  export default Navbar;
+  export default Navbaro;

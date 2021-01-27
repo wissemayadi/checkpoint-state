@@ -5,8 +5,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import {Card,Button} from 'react-bootstrap';
 import { render } from 'react-dom';
 import "./index.css";
-import Navbar from './navbar/Navbar';
-
+import Navbaro from './navbar/Navbar';
+import Testou from "./Hookss/Test";
 class App extends React.Component{
   constructor(){
     super()
@@ -31,22 +31,14 @@ class App extends React.Component{
      },1000)
 
     }
-//   let today = new Date(),
-//   mydate =
-//     today.getFullYear() +
-//     "-" +
-//     (today.getMonth() + 1) +
-//     "-" +
-//     today.getDate();
 
-// const [show, setShow] = useState(false);
-// const [date, setDate] = useState(mydate);
 render() {
 
 return(
  
 <div>
-  
+  <span><Navbaro/></span>
+  {/* <h1><Testou/></h1> */}
   <h3>{this.state.count}</h3>
   <button onClick={()=>
 
@@ -58,11 +50,7 @@ this.setState({
  
   {this.state.show?
     <div className="info">
-{/*       
-    <p>{this.state.fullName}</p>
-<p>{this.state.Bio}</p>
-<p>{this.state.profession}</p>
-<p><img src={this.state.imgSrc}/></p> */}
+
 
 {
 

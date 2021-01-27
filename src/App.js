@@ -8,6 +8,7 @@ import "./index.css";
 import Navbaro from './navbar/Navbar';
 import Testou from "./Hookss/Test";
 import Footer from "./Footer/Footer";
+
 class App extends React.Component{
   constructor(){
     super()
@@ -37,17 +38,19 @@ render() {
 
 return(
  
-<div>
+<div className="affichage">
   <div className="navb"><Navbaro/></div>
+  <h1>Welcome to my website </h1>
   {/* <h1><Testou/></h1> */}
-  <h3>{this.state.count}</h3>
-  <button onClick={()=>
+  <h3  border="success">{this.state.count}</h3>
+  
+  <Button variant="primary" onClick={()=>
 
 this.setState({
   show:!this.state.show
 })}>
   
-  Show</button>
+  Show</Button>
  
   {this.state.show?
     <div className="info">

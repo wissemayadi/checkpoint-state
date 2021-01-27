@@ -3,7 +3,7 @@ import {Nav,NavDropdown,Form,FormControl,Button,Navbar} from "react-bootstrap";
 const Navbaro =()=>{
   return (
     <Navbar bg="light" expand="lg">
-  <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+  <Navbar.Brand href="#home">Checkpoint State</Navbar.Brand>
   <Navbar.Toggle aria-controls="basic-navbar-nav" />
   <Navbar.Collapse id="basic-navbar-nav">
     <Nav className="mr-auto">

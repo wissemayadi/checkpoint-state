@@ -7,6 +7,7 @@ import { render } from 'react-dom';
 import "./index.css";
 import Navbaro from './navbar/Navbar';
 import Testou from "./Hookss/Test";
+import Footer from "./Footer/Footer";
 class App extends React.Component{
   constructor(){
     super()
@@ -37,7 +38,7 @@ render() {
 return(
  
 <div>
-  <span><Navbaro/></span>
+  <div className="navb"><Navbaro/></div>
   {/* <h1><Testou/></h1> */}
   <h3>{this.state.count}</h3>
   <button onClick={()=>
@@ -77,7 +78,7 @@ this.setState({
   
 
   
-  
+  <Footer/>
     </div>
     )
 };}

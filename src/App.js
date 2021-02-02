@@ -22,6 +22,7 @@ class App extends React.Component{
       show:false ,
       count : 0
       
+      
     }}
    
     
@@ -33,6 +34,11 @@ class App extends React.Component{
      },1000)
 
     }
+    componenetDidMount() {
+        
+         this.count()
+        };
+     
 
 render() {
 
@@ -41,7 +47,7 @@ return(
 <div className="affichage">
   <div className="navb"><Navbaro/></div>
   <h1>Welcome to my website </h1>
-  {/* <h1><Testou/></h1> */}
+
   <h3  border="success">{this.state.count}</h3>
   
   <Button variant="primary" onClick={()=>
@@ -52,7 +58,7 @@ this.setState({
   
   Show</Button>
  
-  {this.state.show?
+  { this.state.show?
     <div className="info">
 
 
@@ -73,7 +79,7 @@ this.setState({
     <Button variant="primary">Valider</Button>
   </Card.Body>
 </Card> ))} 
-</div>:null 
+</div> : this.state.count=0
 
 }
   
@@ -87,4 +93,3 @@ this.setState({
 };}
 
 export default App;
-  
